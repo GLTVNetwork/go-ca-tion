@@ -50,3 +50,21 @@ nav a:hover{
     max-width:900px;
     margin:60px auto;
 }
+<section class="channels">
+
+    <div class="card">
+        <h3>GLTV</h3>
+        <p>Travel videos, hidden places, scenic drives, and adventures.</p>
+    </div>
+
+    <div class="card">
+        <h3>Along the Whimsy Way</h3>
+        <p>Vintage treasures, antiques, thrift finds, and unique discoveries.</p>
+    </div>
+
+    <div class="card">
+        <h3>JX</h3>
+        <p>Woodworking, DIY projects, shop tips, and handmade creations.</p>
+    </div>
+
+</section>
