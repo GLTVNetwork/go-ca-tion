@@ -130,3 +130,18 @@ nav a:hover{
 .button:hover {
     background: white;
 }
+/* ===========================
+   Footer
+=========================== */
+
+footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background: #162434;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0 auto;
+    color: #cccccc;
+}
