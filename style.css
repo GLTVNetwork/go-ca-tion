@@ -50,21 +50,36 @@ nav a:hover{
     max-width:900px;
     margin:60px auto;
 }
-<section class="channels">
+/* ===========================
+   Channels Section
+=========================== */
 
-    <div class="card">
-        <h3>GLTV</h3>
-        <p>Travel videos, hidden places, scenic drives, and adventures.</p>
-    </div>
+.channels {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    <div class="card">
-        <h3>Along the Whimsy Way</h3>
-        <p>Vintage treasures, antiques, thrift finds, and unique discoveries.</p>
-    </div>
+.card {
+    background: rgba(255,255,255,.08);
+    border: 1px solid #66c2ff;
+    border-radius: 18px;
+    padding: 30px;
+    width: 280px;
+}
 
-    <div class="card">
-        <h3>JX</h3>
-        <p>Woodworking, DIY projects, shop tips, and handmade creations.</p>
-    </div>
+.card h3 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #66c2ff;
+}
 
-</section>
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+}
