@@ -62,3 +62,14 @@ Every click has a purpose.
 
 If a visitor is confused,
 the design failed—not the visitor.
+
+## Development Philosophy
+
+Build first-class.
+
+Take the time to understand the problem before writing code.
+
+Every page should be easy to read, easy to maintain, and easy to expand.
+
+Measure twice.
+Build once.
