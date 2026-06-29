@@ -73,3 +73,10 @@ Every page should be easy to read, easy to maintain, and easy to expand.
 
 Measure twice.
 Build once.
+
+Communication Standard
+
+Use the most accurate word available.
+
+If a better word changes the meaning,
+use the better word.
