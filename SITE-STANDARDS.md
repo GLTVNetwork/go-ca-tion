@@ -49,3 +49,16 @@ Function before appearance.
 ## Rule #4
 
 Hierarchy before code.
+
+## Rule #5
+
+Every page answers one question.
+
+## Rule #6
+
+Every click has a purpose.
+
+## Rule #7
+
+If a visitor is confused,
+the design failed—not the visitor.
