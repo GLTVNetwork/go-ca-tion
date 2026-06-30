@@ -116,19 +116,20 @@ nav a:hover{
     width: 100%;
     margin: 0;
 }
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 22px;
-    background: #66c2ff;
-    color: #0d1b2a;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 999px;
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#66c2ff;
+    color:#0d1b2a;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:.3s;
 }
 
-.button:hover {
-    background: white;
+.button:hover{
+    background:white;
 }
 /* ===========================
    Footer
