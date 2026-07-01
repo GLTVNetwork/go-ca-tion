@@ -148,3 +148,69 @@ footer p {
     font-size: 16px;
     line-height: 1.5;
 }
+/* ===========================
+   GO-CA-TION Video Callout
+=========================== */
+
+.video-callout{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+
+    margin:60px auto;
+    padding:40px;
+
+    max-width:1200px;
+
+    background:#243241;
+    border:1px solid #59B8FF;
+    border-radius:18px;
+}
+
+.video-info{
+    flex:1;
+}
+
+.video-info h2{
+    color:#59B8FF;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.video-info p{
+    font-size:1.15rem;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.youtube-button{
+    display:inline-block;
+
+    background:#FF0000;
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:.25s;
+}
+
+.youtube-button:hover{
+    background:#d80000;
+    transform:translateY(-2px);
+}
+
+.video-image{
+    flex:1;
+}
+
+.video-image img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
