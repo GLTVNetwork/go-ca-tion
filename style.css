@@ -216,9 +216,10 @@ footer p {
 }
 .hero-photo {
 
-    width: 100%;
-    max-width: 1000px;
     display: block;
+    width: 60%;
+    max-width: 500px;
+    height: auto;
     margin: 40px auto;
     border-radius: 16px;
 
