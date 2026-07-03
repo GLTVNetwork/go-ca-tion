@@ -214,3 +214,12 @@ footer p {
     border-radius:12px;
     display:block;
 }
+.hero-photo {
+
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 16px;
+
+}
