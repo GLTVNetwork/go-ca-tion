@@ -230,8 +230,14 @@ max-width: 450px;
 
 .youtube-cta {
     display: block;
-    width: min(800px, 90%);
+    width: 70%;
+    max-width: 900px;
     height: auto;
     margin: 40px auto 60px auto;
     border-radius: 18px;
+    transition: transform .2s ease;
+}
+
+.youtube-cta:hover {
+    transform: scale(1.02);
 }
