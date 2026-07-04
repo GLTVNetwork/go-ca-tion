@@ -224,3 +224,17 @@ max-width: 450px;
     border-radius: 16px;
 
 }
+/* ==========================================
+   GO-CA-TION YouTube CTA Images
+========================================== */
+
+.youtube-cta {
+
+    display: block;
+    width: 85%;
+    max-width: 900px;
+    height: auto;
+    margin: 40px auto 60px auto;
+    border-radius: 18px;
+
+}
