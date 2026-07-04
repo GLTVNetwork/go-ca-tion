@@ -229,12 +229,9 @@ max-width: 450px;
 ========================================== */
 
 .youtube-cta {
-
     display: block;
-    width: 85%;
-    max-width: 900px;
+    width: min(800px, 90%);
     height: auto;
     margin: 40px auto 60px auto;
     border-radius: 18px;
-
 }
