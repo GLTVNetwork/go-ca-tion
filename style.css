@@ -292,3 +292,7 @@ nav ul li a:hover {
   color: #000;
   text-decoration: underline;
 }
+/* Fix nav wrapping so "Home" appears */
+.nav-wrap {
+  display: block;
+}
