@@ -74,6 +74,29 @@ nav ul {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+/* GLOBAL NAVIGATION FIX */
+nav {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 
 /* MAIN LAYOUT */
 
