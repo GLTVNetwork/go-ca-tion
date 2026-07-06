@@ -262,3 +262,12 @@ footer {
     align-items: flex-start;
     gap: 0.5rem;
   }
+/* Fix nav wrapping so "Home" appears */
+.nav-wrap {
+  display: block;
+}
+
+nav {
+  display: block;
+  margin-top: 20px;
+}
