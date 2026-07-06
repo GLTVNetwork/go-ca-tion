@@ -1,107 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <title>GO-CA-TION™ | Travel, Vintage, Handmade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Discover Gocation Life, Along the Whimsy Way, and JX of All Trades – travel, vintage, and handmade adventures by Mike & Sherry.">
+  <style>
+    :root {
+      --bg: #f7f3ea;
+      --fg: #1f2b26;
+      --accent: #c46a2b;
+      --accent-soft: #e3b58a;
+      --card: #ffffff;
+      --border: #d7cbb4;
+      --link: #1f4b6e;
+      --font-head: "Playfair Display", Georgia, serif;
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    header {
+      border-bottom: 1px solid var(--border);
+      background: #f0e6d6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .brand span {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6b5b3f;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
 
-<title>GO-CA-TION™ | Travel, Vintage, and Handmade Projects</title>
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
 
-<link rel="stylesheet" href="style.css">
+    .hero {
+      padding: 2.5rem 2rem;
+      background: linear-gradient(135deg, #f0e6d6, #f7f3ea);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      font-family: var(--font-head);
+      font-size: 2.4rem;
+      margin: 0 0 0.75rem;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 0 1.5rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .hero-card {
+      background: var(--card);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .hero-card h2 {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+    }
+    .tagline {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #7a6a4a;
+      margin-bottom: 0.5rem;
+    }
+    .hero-card a.primary-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .hero-card a.primary-link:hover {
+      background: #a9551f;
+      text-decoration: none;
+    }
 
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h2 {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+    .section p {
+      max-width: 700px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .card h3 {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      margin: 0 0 0.4rem;
+    }
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #8a7a5a;
+      margin-bottom: 0.4rem;
+    }
+
+    .pill-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .pill-links a {
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #f9f5ee;
+      font-size: 0.8rem;
+    }
+
+    .about-box {
+      background: var(--card);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      max-width: 720px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #7a6a4a;
+      background: #f0e6d6;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .nav-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
 <header>
-
-<h1>GO-CA-TION™</h1>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="explore-ohio.html">Explore Ohio</a>
-<a href="videos.html">Videos</a>
-<a href="road-trips.html">Road Trips</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+  <div class="nav-wrap">
+    <div class="brand">
+      GO-CA-TION™
+      <span>Travel • Vintage • Handmade</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#vintage">Vintage</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
+  <!-- HERO HUB -->
+  <section class="hero">
+    <h1>Mike & Sherry’s Adventure Hub</h1>
+    <p>
+      Welcome to GO-CA-TION™ — the central hub for everything we create:
+      Ohio travel guides, vintage stories, handmade projects, stickers,
+      and our YouTube channels Gocation Life, Along the Whimsy Way, and JX of All Trades.
+    </p>
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="tagline">Travel • Ohio • Hidden Gems</div>
+        <h2>Gocation Life</h2>
+        <p>Road trips, small towns, waterfalls, historic sites, and the stories behind the places we visit.</p>
+        <a class="primary-link" href="https://www.youtube.com/@GocationLife" target="_blank">Visit Channel</a>
+      </div>
+      <div class="hero-card">
+        <div class="tagline">Vintage • Lore • Finds</div>
+        <h2>Along the Whimsy Way</h2>
+        <p>Antiques, flea markets, vintage treasures, and the whimsical stories that connect past to present.</p>
+        <a class="primary-link" href="https://www.youtube.com/@AlongTheWhimsyWay" target="_blank">Visit Channel</a>
+      </div>
+      <div class="hero-card">
+        <div class="tagline">Workshop • Builds • Stickers</div>
+        <h2>JX of All Trades</h2>
+        <p>Handmade projects, tools, trades-themed stickers, and behind-the-scenes from the JX workshop.</p>
+        <a class="primary-link" href="https://www.youtube.com/@JXofAllTrades" target="_blank">Visit Channel</a>
+      </div>
+    </div>
+  </section>
 
-<section class="hero">
+  <!-- TRAVEL HUB -->
+  <section id="travel" class="section">
+    <h2>Travel • Gocation Life</h2>
+    <p>
+      Explore our growing collection of Ohio travel adventures — from historic mills and furnaces
+      to scenic drives and small-town walks. Each trip pairs video, photos, and practical tips.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="meta">Featured Trip</div>
+        <h3>White’s Mill & Small-Town Stroll</h3>
+        <p>A day of water, wood, and history at White’s Mill, plus a walk through a classic Ohio town.</p>
+        <div class="pill-links">
+          <a href="#">View Trip Guide (coming soon)</a>
+          <a href="https://www.youtube.com/@GocationLife" target="_blank">Watch on Gocation Life</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="meta">Historic Site</div>
+        <h3>Adena Mansion & Cannon Fire</h3>
+        <p>Step into early Ohio history with a visit to Adena Mansion, complete with period reenactments.</p>
+        <div class="pill-links">
+          <a href="#">Read Story (coming soon)</a>
+          <a href="https://www.youtube.com/@GocationLife" target="_blank">Watch Episode</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>One Hub. Three Creative Roads.</h2>
+  <!-- VINTAGE HUB -->
+  <section id="vintage" class="section">
+    <h2>Vintage • Along the Whimsy Way</h2>
+    <p>
+      This is where Sherry’s eye for charm and your shared love of lore come together:
+      antique shops, flea markets, and the stories that make each piece feel alive.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="meta">Vintage Story</div>
+        <h3>Flea Market Finds & Lore</h3>
+        <p>Follow us through aisles of curiosities as we hunt for pieces with character and history.</p>
+        <div class="pill-links">
+          <a href="https://alongthewhimsyway.com" target="_blank">Visit AlongTheWhimsyWay.com</a>
+          <a href="https://www.youtube.com/@AlongTheWhimsyWay" target="_blank">Watch on YouTube</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="meta">Antique Spotlight</div>
+        <h3>Console TVs & Broadcast Nostalgia</h3>
+        <p>Exploring vintage Zenith consoles and the early days of color broadcast aesthetics.</p>
+        <div class="pill-links">
+          <a href="#">Read Feature (coming soon)</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>
-GO-CA-TION is the home base for our Ohio travel adventures,
-vintage discoveries, handmade projects, and the stories we share along the way.
-</p>
+  <!-- PROJECTS HUB -->
+  <section id="projects" class="section">
+    <h2>Projects • JX of All Trades</h2>
+    <p>
+      From primitive woodworking to trades-themed sticker lines, this is the workshop side of our world.
+      Plans, builds, tools, and the systems behind how everything gets made.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="meta">Woodworking</div>
+        <h3>Primitive Basket & Walnut Pegs</h3>
+        <p>Small-scale woodworking projects with big character: baskets, pantry pegs, and more.</p>
+        <div class="pill-links">
+          <a href="#">Project Plans (coming soon)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="meta">Sticker Line</div>
+        <h3>Trades-Themed Sticker Characters</h3>
+        <p>Code Enforcer, Romex Jockey, Pipe Whisperer, and more — built for tool lovers and tradespeople.</p>
+        <div class="pill-links">
+          <a href="https://www.etsy.com/shop/JXofAltrds" target="_blank">Shop on Etsy</a>
+          <a href="https://www.youtube.com/@JXofAllTrades" target="_blank">Watch Builds</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- SHOP HUB -->
+  <section id="shop" class="section">
+    <h2>Shop • Stickers & Handmade</h2>
+    <p>
+      Want to bring a piece of our world into yours? Browse trades-themed stickers, handmade items,
+      and future digital plans through our Etsy shop and upcoming product pages.
+    </p>
+    <div class="about-box">
+      <p><strong>Etsy:</strong> JXofAltrds</p>
+      <p>
+        We use high-quality materials (like Koala glossy vinyl for stickers) and design each piece
+        to feel like it belongs in the same universe as our videos and stories.
+      </p>
+      <p>
+        <a href="https://www.etsy.com/shop/JXofAltrds" target="_blank">Visit our Etsy shop →</a>
+      </p>
+    </div>
+  </section>
 
-<section class="featured">
-
-<h2>Where Do You Want to Go?</h2>
-
-<div class="channels">
-
-<div class="card">
-<h3>Explore Ohio</h3>
-<p>
-Scenic drives, covered bridges, historic mills, roadside stops,
-parks, small towns, and hidden places worth discovering.
-</p>
-<a class="button" href="explore-ohio.html">Explore Ohio</a>
-</div>
-
-<div class="card">
-<h3>Watch the Videos</h3>
-<p>
-Follow along on GLTV as we visit Ohio back roads, historic sites,
-local landmarks, and quiet places most people miss.
-</p>
-<a class="button" href="videos.html">Watch Videos</a>
-</div>
-
-<div class="card">
-<h3>Shop Vintage</h3>
-<p>
-Browse vintage treasures, antiques, rustic décor, and unique finds
-from Along the Whimsy Way.
-</p>
-<a class="button" href="atww.html">Visit ATWW</a>
-</div>
-
-<div class="card">
-<h3>Build Something</h3>
-<p>
-Woodworking projects, DIY ideas, shop builds, handmade items,
-and project plans from Jxofaltrds.
-</p>
-<a class="button" href="jx.html">Visit JX</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="featured">
-
-<h2>Our Purpose</h2>
-
-<p>
-This site connects our work in one place. Some visitors come looking for Ohio travel ideas.
-Some come for vintage finds. Some come for woodworking and DIY projects.
-From here, you can find the videos, shops, projects, and stories that fit your road.
-</p>
-
-</section>
-
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Mike & Sherry</h2>
+    <div class="about-box">
+      <p>
+        We’re Mike and Sherry, based in Ohio, building a life around travel, vintage finds,
+        handmade projects, and the stories that connect them.
+      </p>
+      <p>
+        GO-CA-TION™ is our hub — the place where all of our channels, projects, and adventures
+        come together so you can explore the whole universe in one visit.
+      </p>
+      <p>
+        Whether you discovered us through a YouTube episode, an Etsy sticker, or a vintage story,
+        we’re glad you’re here.
+      </p>
+    </div>
+  </section>
 </main>
 
-</body>
+<footer>
+  GO-CA-TION™ • Gocation Life • Along the Whimsy Way • JX of All Trades<br>
+  &copy; <span id="year"></span> Mike & Sherry — All rights reserved.
+</footer>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
