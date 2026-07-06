@@ -9,7 +9,6 @@
   --font-head: "Playfair Display", Georgia, serif;
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
 * {
   box-sizing: border-box;
 }
