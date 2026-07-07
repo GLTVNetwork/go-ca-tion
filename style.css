@@ -19,6 +19,12 @@ body {
     margin: 0;
     font-size: 32px;
 }
+.logo {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
 
 .nav-wrap .brand p {
     margin: 5px 0 20px;
