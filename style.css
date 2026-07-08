@@ -228,6 +228,37 @@ footer {
         margin-bottom: 10px;
     }
 }
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
 
 
 
