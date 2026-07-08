@@ -150,6 +150,84 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    .nav-wrap {
+        padding: 15px;
+    }
+
+    .nav-wrap .brand h1 {
+        font-size: 26px;
+    }
+
+    .nav-wrap .brand p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 0;
+        display: block;
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    /* FEATURED GRID */
+    .featured {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .featured-item {
+        padding: 15px;
+    }
+
+    /* CATEGORY CARDS */
+    .category-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer .logo {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+}
 
 
 
