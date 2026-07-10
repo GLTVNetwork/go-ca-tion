@@ -178,6 +178,19 @@ footer {
         padding: 8px 0;
         display: block;
     }
+/* Smooth slide-down animation */
+nav ul {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+nav ul.show {
+    max-height: 500px; /* enough space for all links */
+}
+.hamburger.active {
+    transform: rotate(0deg);
+}
 
     /* PAGE HERO */
     .page-hero {
@@ -241,11 +254,17 @@ footer {
 
 /* MOBILE NAV */
 @media (max-width: 768px) {
+nav ul li {
+    padding: 8px 0;
+}
 
     .hamburger {
         display: block;
         margin: 0 auto 15px;
     }
+.nav-wrap {
+    padding-bottom: 10px;
+}
 
     nav ul {
         display: none;
