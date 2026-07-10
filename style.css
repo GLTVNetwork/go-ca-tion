@@ -150,6 +150,11 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+}
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
@@ -254,17 +259,37 @@ nav ul.show {
 
 /* MOBILE NAV */
 @media (max-width: 768px) {
-nav ul li {
-    padding: 8px 0;
-}
 
     .hamburger {
         display: block;
         margin: 0 auto 15px;
     }
-.nav-wrap {
-    padding-bottom: 10px;
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin-top: 10px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    nav ul.show {
+        display: flex;
+        max-height: 500px;
+    }
+
+    nav ul li {
+        padding: 8px 0;
+    }
+
+    .nav-wrap {
+        padding-bottom: 10px;
+    }
 }
+
 
     nav ul {
         display: none;
