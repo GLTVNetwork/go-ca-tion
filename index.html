@@ -6,14 +6,6 @@
     <title>GO-CA-TION™</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-    });
-</script>
 
 <body>
 
@@ -25,8 +17,11 @@
     <p>TRAVEL • VINTAGE • HANDMADE</p>
 </div>
 <button class="hamburger" aria-label="Toggle Menu">
-    ☰
+    <span></span>
+    <span></span>
+    <span></span>
 </button>
+
 
         <nav>
             <ul>
@@ -78,6 +73,13 @@
 
         <p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
     </footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
 
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
