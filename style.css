@@ -178,3 +178,36 @@ nav ul li a.active {
 }
 
 .card .button:hover
+/* HOMEPAGE CTA BLOCK */
+.cta-block {
+    text-align: center;
+    background: #0066cc;
+    color: #fff;
+    padding: 50px 20px;
+    margin: 40px 0;
+}
+
+.cta-block h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.cta-block p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #fff;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #eaeaea;
+}
