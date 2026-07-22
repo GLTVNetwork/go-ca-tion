@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a GO-CA-TION™ Life Partner</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- HEADER + NAV -->
+    <div class="nav-wrap">
+        <div class="brand">
+            <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+            <h1>GO-CA-TION™</h1>
+            <p>TRAVEL • VINTAGE • HANDMADE</p>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="vintage.html">Vintage</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partner.html" class="active">Life Partner</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <h1>Become a GO-CA-TION™ Life Partner</h1>
+            <p class="tagline">Fuel the journey. Build the van. Support the story.</p>
+        </section>
+
+        <!-- INTRO SECTION -->
+        <section class="content-block">
+            <h2>Why GO-CA-TION™ Needs Partners</h2>
+            <p>
+                GO-CA-TION™ is a calm-travel storytelling project built around three pillars:
+                <strong>Travel • Vintage • Handmade</strong>.
+                Every episode of Gocation Life explores waterfalls, mills, scenic drives, roadside Americana,
+                vintage hunts, and handmade builds — all filmed with intention and heart.
+            </p>
+            <p>
+                To keep the journey moving — and to finish the GO-CA-TION™ van build — we’re inviting partners
+                who believe in the mission and want to help power the road ahead.
+            </p>
+        </section>
+
+        <!-- VAN STORY -->
+        <section class="content-block">
+            <h2>The GO-CA-TION™ Van</h2>
+            <p>
+                The GO-CA-TION™ van isn’t just a vehicle — it’s the mobile studio, workshop, and home base
+                behind the entire project. It allows us to reach remote waterfalls, film historic mills and
+                covered bridges, explore vintage shops and roadside oddities, and bring calm travel stories
+                to viewers who need a quiet escape.
+            </p>
+            <p>
+                Your partnership helps us finish the van build, cover fuel and travel costs, upgrade gear,
+                and keep the journey rolling.
+            </p>
+        </section>
+
+        <!-- PARTNER BENEFITS -->
+        <section class="content-block">
+            <h2>What Partners Receive</h2>
+            <ul>
+                <li><strong>In-Video Recognition:</strong> Your name, brand, or logo featured in GO-CA-TION™ episodes.</li>
+                <li><strong>Website + Description Placement:</strong> Links on go-ca-tion.com and YouTube descriptions.</li>
+                <li><strong>Brand Shoutouts:</strong> Across Gocation Life, Along the Whimsy Way, and JX of All Trades.</li>
+                <li><strong>Behind-the-Scenes Access:</strong> Van build updates, travel plans, and gear upgrades.</li>
+                <li><strong>Sponsor Spotlight:</strong> Featured on this GO-CA-TION™ Life Partner page.</li>
+                <li><strong>"Powered By" Credits:</strong> Top-tier partners receive dedicated segments in select episodes.</li>
+            </ul>
+        </section>
+
+        <!-- TIERS -->
+        <section class="content-block">
+            <h2>Partnership Levels</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Bronze Partner — $50</h3>
+                    <p>Your name listed on the GO-CA-TION™ Life Partner page.</p>
+                </div>
+                <div class="card">
+                    <h3>Silver Partner — $150</h3>
+                    <p>Name + link + shoutout in a Gocation Life episode.</p>
+                </div>
+                <div class="card">
+                    <h3>Gold Partner — $500</h3>
+                    <p>Logo placement + link + shoutout + sponsor spotlight.</p>
+                </div>
+                <div class="card">
+                    <h3>Platinum Partner — $1,000+</h3>
+                    <p>"Powered By" credit in episodes + logo placement + spotlight + custom segment.</p>
+                </div>
+                <div class="card">
+                    <h3>Legacy Partner — $5,000+</h3>
+                    <p>Full-van sponsor — your brand becomes part of the GO-CA-TION™ van itself.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="content-block">
+            <h2>Ready to Partner?</h2>
+            <p>
+                If you’d like to become a GO-CA-TION™ Life Partner, reach out to us to discuss sponsorship options,
+                custom collaborations, or long-term partnerships.
+            </p>
+            <p>
+                <strong>Let’s build something memorable together — on the road, in the workshop, and along the whimsy way.</strong>
+            </p>
+            <!-- You can replace this with a mailto link or contact form later -->
+            <a href="mailto:your-email-here@example.com" class="button">Contact GO-CA-TION™ About Partnership</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+        <p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
+    </footer>
+
+    <!-- HAMBURGER SCRIPT -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
