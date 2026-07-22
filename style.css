@@ -290,21 +290,7 @@ nav ul.show {
     }
 }
 
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-}
-
-/* HAMBURGER MENU */
+ /* HAMBURGER MENU */
 .hamburger {
     display: none;
     width: 35px;
