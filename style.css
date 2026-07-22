@@ -211,3 +211,31 @@ nav ul li a.active {
 .cta-button:hover {
     background: #eaeaea;
 }
+/* FOOTER SUPPORT BANNER */
+.footer-banner {
+    background: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+.footer-banner p {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-banner-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fff;
+    color: #0066cc;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.footer-banner-button:hover {
+    background: #eaeaea;
+}
