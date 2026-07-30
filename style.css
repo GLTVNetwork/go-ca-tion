@@ -429,3 +429,51 @@ nav ul li a.active {
     color: #555;
     line-height: 1.6;
 }
+/* SPONSOR TIERS */
+.sponsor-tiers {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.sponsor-tiers h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.tier-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.tier-block {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.tier-block h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tier-block ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.tier-block li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.tier-note {
+    font-size: 15px;
+    color: #666;
+    font-style: italic;
+}
