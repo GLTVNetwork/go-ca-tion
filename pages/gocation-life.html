@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gocation Life</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- HEADER + NAV -->
+<div class="nav-wrap">
+    <div class="brand">
+        <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+        <h1>GO-CA-TION™</h1>
+        <p>TRAVEL • VINTAGE • HANDMADE</p>
+    </div>
+
+    <button class="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="partner.html">Life Partner</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- MAIN CONTENT -->
 <main>
 
 <section class="page-hero">
@@ -8,32 +46,30 @@
 <section class="content-block">
     <h2>Our Story</h2>
     <p>
-        Gocation Life began as a quiet escape — a way to slow down, explore Ohio’s hidden gems, and 
-        share peaceful travel stories with viewers who crave calm, intentional content.
+        Gocation Life began as a quiet escape — a way to slow down, explore Ohio’s hidden gems, and share peaceful
+        travel stories with viewers who crave calm, intentional content.
     </p>
 
     <p>
-        What started as simple filming trips to waterfalls and historic mills has grown into a full 
-        travel brand spanning YouTube, handmade goods, and the GO‑CA‑TION™ van build.
+        What started as simple filming trips to waterfalls and historic mills has grown into a full travel brand
+        spanning YouTube, handmade goods, and the GO‑CA‑TION™ van build.
     </p>
 
     <p>
-        Today, Gocation Life blends scenic drives, roadside Americana, vintage hunts, and DIY projects 
-        into a warm, cinematic travel experience.
+        Today, Gocation Life blends scenic drives, roadside Americana, vintage hunts, and DIY projects into a warm,
+        cinematic travel experience.
     </p>
 </section>
 
 <section class="content-block">
     <h2>The GO‑CA‑TION™ Van</h2>
     <p>
-        The GO‑CA‑TION™ van is more than a vehicle — it’s the mobile studio, workshop, and home base 
-        behind the entire project. It allows us to reach remote waterfalls, film historic sites, and 
-        bring calm‑travel stories to viewers everywhere.
+        The GO‑CA‑TION™ van is more than a vehicle — it’s the mobile studio, workshop, and home base behind the entire
+        project. It allows us to reach remote waterfalls, film historic sites, and bring calm‑travel stories to viewers everywhere.
     </p>
 
     <p>
-        The van build is ongoing, and every upgrade brings us closer to a fully self‑sufficient 
-        travel rig capable of filming anywhere the road leads.
+        The van build is ongoing, and every upgrade brings us closer to a fully self‑sufficient travel rig capable of filming anywhere the road leads.
     </p>
 </section>
 
@@ -51,9 +87,27 @@
 <section class="content-block spotlight">
     <h2>Our Mission</h2>
     <p>
-        To create calm, meaningful travel content that inspires viewers to explore, slow down, and 
-        appreciate the beauty of everyday places.
+        To create calm, meaningful travel content that inspires viewers to explore, slow down, and appreciate the beauty of everyday places.
     </p>
 </section>
 
 </main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+    <p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
+</footer>
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
