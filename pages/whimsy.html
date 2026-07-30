@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Along the Whimsy Way</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- HEADER + NAV -->
+<div class="nav-wrap">
+    <div class="brand">
+        <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+        <h1>GO-CA-TION™</h1>
+        <p>TRAVEL • VINTAGE • HANDMADE</p>
+    </div>
+
+    <button class="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="partner.html">Life Partner</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- MAIN CONTENT -->
 <main>
 
 <section class="page-hero">
@@ -8,22 +46,20 @@
 <section class="content-block">
     <h2>Our Story</h2>
     <p>
-        Along the Whimsy Way began as a simple love for old things — the kind of treasures that carry 
-        stories, patina, and the quiet charm of a life well‑lived. What started as weekend antiquing 
-        turned into a decades‑long passion for preserving history and sharing it with others.
+        Along the Whimsy Way began as a simple love for old things — the kind of treasures that carry stories,
+        patina, and the quiet charm of a life well‑lived. What started as weekend antiquing turned into a
+        decades‑long passion for preserving history and sharing it with others.
     </p>
 
     <p>
-        Long before launching our independent storefront, we spent over ten years selling under the 
-        name <strong>whimsicalwishesandwares</strong> on eBay, earning more than 
-        <strong>2,500 successful sales</strong> and a <strong>100% positive feedback rating</strong>. 
-        Those years taught us how to curate, restore, and ship delicate vintage pieces with care.
+        Before launching our independent storefront, we spent over ten years selling under the name
+        <strong>whimsicalwishesandwares</strong> on eBay, earning more than
+        <strong>2,500 successful sales</strong> and a <strong>100% positive feedback rating</strong>.
     </p>
 
     <p>
-        Today, Along the Whimsy Way continues that legacy — blending antique hunting, primitive décor, 
-        handmade goods, and nostalgic home accents into a curated experience for collectors and 
-        old‑soul decorators.
+        Today, Along the Whimsy Way continues that legacy — blending antique hunting, primitive décor,
+        handmade goods, and nostalgic home accents into a curated experience for collectors and old‑soul decorators.
     </p>
 </section>
 
@@ -41,28 +77,45 @@
 <section class="content-block">
     <h2>Our Travels & Treasure Hunts</h2>
     <p>
-        We film our adventures on the <strong>Along the Whimsy Way YouTube channel</strong>, where we visit 
-        antique malls, roadside Americana, historic towns, and hidden vintage shops across Ohio and beyond.
+        We film our adventures on the <strong>Along the Whimsy Way YouTube channel</strong>, where we visit antique malls,
+        roadside Americana, historic towns, and hidden vintage shops across Ohio and beyond.
     </p>
 
     <p>
-        One of our favorite destinations is the 
-        <strong>Olde Shoe Factory Antique Mall in Lancaster, Ohio</strong> — a sprawling treasure trove 
-        where we source many of our most unique finds.
+        One of our favorite destinations is the <strong>Olde Shoe Factory Antique Mall in Lancaster, Ohio</strong> —
+        a sprawling treasure trove where we source many of our most unique finds.
     </p>
 
     <p>
-        Every trip is a story. Every find has a past. And every piece we bring home becomes part of the 
-        Whimsy Way collection.
+        Every trip is a story. Every find has a past. And every piece we bring home becomes part of the Whimsy Way collection.
     </p>
 </section>
 
 <section class="content-block spotlight">
     <h2>Our Mission</h2>
     <p>
-        To preserve the charm of the past, celebrate handmade craftsmanship, and bring warmth and nostalgia 
+        To preserve the charm of the past, celebrate handmade craftsmanship, and bring warmth and nostalgia
         into modern homes — one vintage treasure at a time.
     </p>
 </section>
 
 </main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+    <p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
+</footer>
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
