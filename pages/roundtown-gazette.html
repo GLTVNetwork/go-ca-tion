@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roundtown Gazette • GO-CA-TION™</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="gazette-page">
+
+    <!-- HEADER + NAV -->
+    <div class="nav-wrap">
+       <div class="brand">
+    <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+    <h1>GO-CA-TION™</h1>
+    <p>TRAVEL • VINTAGE • HANDMADE</p>
+</div>
+<button class="hamburger" aria-label="Toggle Menu">
+    ☰
+</button>
+
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="vintage.html">Vintage</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partner.html">Life Partner</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="page-hero">
+            <h1>THE ROUNDTOWN GAZETTE</h1>
+            <p class="tagline">Good News for a Good Town.</p>
+        </section>
+
+        <div class="gazette-content">
+            <figure class="gazette-edition">
+                <a href="../images/roundtown-gazette-2026-09-17.png" aria-label="Open the September 17, 2026 Roundtown Gazette edition at full size">
+                    <img src="../images/roundtown-gazette-2026-09-17.png" width="1024" height="1536" fetchpriority="high" alt="The Roundtown Gazette front page, Thursday, September 17, 2026, featuring Michael Parks as the new delivery boy and a large Parks Grocery advertisement in the right column.">
+                </a>
+            </figure>
+            <section class="gazette-intro" aria-labelledby="gazette-stories">
+                <h2 id="gazette-stories">Stories from Round Town, Blue Creek &amp; the surrounding country.</h2>
+                <p>The Roundtown Gazette brings together local history, family stories, folklore and a little imagination.</p>
+                <p><strong>The Gazette is returning. Full archive coming soon.</strong></p>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="../images/gocation-life-logo.png" alt="Gocation Life Logo" class="logo">
+        <p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
+    </footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</body>
+</html>
