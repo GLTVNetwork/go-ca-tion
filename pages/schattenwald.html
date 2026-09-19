@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Schattenwald | Along the Whimsy Way</title>
+
+<meta name="description"
+content="Beyond the covered bridge lies a village remembered only by those willing to wander.">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="nav-wrap">
+
+    <div class="brand">
+        <img src="../images/gocation-life-logo.png"
+             alt="Gocation Life Logo"
+             class="logo">
+
+        <h1>GO-CA-TION™</h1>
+
+        <p>TRAVEL • VINTAGE • HANDMADE</p>
+    </div>
+
+    <button class="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="partner.html">Life Partner</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<main>
+
+<section class="page-hero">
+
+<h1>Schattenwald</h1>
+
+<p class="tagline">
+A village remembered only by those willing to wander.
+</p>
+
+</section>
+
+<section class="content-block" style="text-align:center;">
+
+<img src="../images/schattenwald-map.jpg"
+     alt="Antique map of Schattenwald"
+     style="width:100%;max-width:1200px;border-radius:8px;">
+
+<p style="margin-top:30px;font-style:italic;font-size:1.2rem;">
+
+"There are places that do not appear on modern maps."
+
+</p>
+
+<p>
+
+<a class="button"
+href="whimsy-witches/anna/">
+
+Enter the Village →
+
+</a>
+
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<img src="../images/gocation-life-logo.png"
+     alt="Gocation Life Logo"
+     class="logo">
+
+<p>&copy; 2026 GO-CA-TION™ — Travel • Vintage • Handmade</p>
+
+</footer>
+
+<script>
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('show');
+
+});
+
+</script>
+
+</body>
+</html>
